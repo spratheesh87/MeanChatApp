@@ -1,0 +1,25 @@
+<!--<ul>
+  <li *ngFor = "let user of userList" click()="onUserSelect(user.usernName)">
+    {{user.userName}}
+  </li>
+</ul>-->
+
+
+        <div id="sidebar-content" class="w-100 h-100">
+            <div class="input-group p-0 d-xs-none" id="search-group">                
+                <span class="input-group-addon">
+                    <button class="btn border-0 bg-white text-primary hover-color-darkblue" type="button">
+                        <i class="fa fa-search fa-fw"></i>
+                    </button>
+                </span>
+            </div>
+            <div class="sidebar-scroll" id="list-group">
+                <ul class="list-group w-100" id="friend-list">
+                    <li *ngFor = "let user of userList" class="list-group-item p-1 active hover-bg-lightgray">
+                    <img src="//placehold.it/50x50" class="rounded-circle">
+                    <span class="d-xs-none username" (click)="onUserSelect(user.userName)"> {{user.userName}}</span>
+                </li>               
+                
+            </ul>
+            </div>
+      
